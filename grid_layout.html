@@ -6,54 +6,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <title>Document</title>
-  <style>
-    .body {
-      background: grey;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      /*1fr 1fr 1fr*/
-      grid-auto-rows: minmax(30px, auto);
-      grid-gap: 10px;
-      grid-template-areas: "header header header" "nav main main" "footer footer footer";
-    }
-
-    @media (min-width: 320px) and (max-width: 600px) {
-      .body {
-        grid-template-columns: 1fr;
-        grid-auto-rows: minmax(30px, auto);
-        grid-template-areas: "header" "nav" "main" "footer";
-        grid-gap: 0;
-        grid-auto-rows: auto;
-      }
-
-      nav {
-        display: none;
-      }
-    }
-
-    header {
-      background: #eee;
-      grid-area: header;
-    }
-
-    main {
-      background: #ddd;
-      grid-area: main;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-
-    nav {
-      background: #ccc;
-      grid-area: nav;
-    }
-
-    footer {
-      background: #bbb;
-      grid-area: footer;
-    }
-  </style>
+  <link rel='stylesheet' href='./grid.css'>
 </head>
 
 <body>
